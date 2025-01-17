@@ -1,0 +1,23 @@
+(LOOP)
+@R0
+D = M
+
+@END
+D;JLE
+
+@R0
+D=M
+@R1
+M=M+D
+
+@R0
+M=M-1
+D=M
+
+@LOOP
+D;JGT
+
+
+(END)
+@END
+0;JMP
